@@ -34,6 +34,9 @@ $grayishBlue: hsl(208, 11%, 55%);
     background-color: white;
     border: none;
   }
+  @include media-breakpoint-up(lg){
+    padding: 0.3rem 2.5rem;
+  }
 }
 
 .getBtn {

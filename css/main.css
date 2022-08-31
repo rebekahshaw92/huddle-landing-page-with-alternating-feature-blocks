@@ -5210,6 +5210,11 @@ body {
   background-color: white;
   border: none;
 }
+@media (min-width: 992px) {
+  .tryBtn {
+    padding: 0.3rem 2.5rem;
+  }
+}
 
 .getBtn {
   border-radius: 2rem;
