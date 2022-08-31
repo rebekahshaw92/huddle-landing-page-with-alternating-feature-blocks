@@ -1,0 +1,83 @@
+$veryDarkCyan: hsl(192, 100%, 9%);
+$veryPaleCyan: hsl(193, 100%, 96%);
+$pink: hsl(322, 100%, 66%);
+
+.attribution { 
+    font-size: 11px; 
+    padding: 40px;
+    text-align: center; 
+    color: $veryPaleCyan;
+     a { 
+         color: hsl(228, 45%, 44%); 
+        }
+}
+
+.mainFooter {
+    background-color: $veryDarkCyan;
+    width: 100%;
+}
+
+.footerLogo {
+    filter: brightness(0) invert(1);
+    width: 40%;
+    padding: 5%;
+    margin-top: 30%;
+    padding-bottom: 0;
+    @include media-breakpoint-up(lg){
+        width: 20%;
+        margin-top: 10%;
+    }
+}
+
+//  .imgFooter {
+//      margin: 10% !important;
+//       margin-top: 5% !important;
+// @include media-breakpoint-up(lg){
+//     margin-left: 10%;
+// }
+//  }
+
+.info {
+    margin: 5%;
+    @include media-breakpoint-up(lg){
+         margin-left: 13%;
+         margin-top: 10%;
+     }
+}
+
+.infoMain {
+    margin: 5%;
+    @include media-breakpoint-up(lg){
+         margin-left: 13%;
+     }
+}
+
+.menu {
+    margin-top: 10%;
+    @include media-breakpoint-up(lg){
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.social {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+}
+ 
+.fa-brands {
+    color: $veryPaleCyan;
+    border: 1px solid $veryPaleCyan;
+    border-radius: 3rem;
+    padding: 20% 20% 20% 20%; 
+    &:hover {
+        color: $pink;
+        border: 1px solid $pink;
+    }
+
+}

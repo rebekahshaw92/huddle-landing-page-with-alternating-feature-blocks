@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+$font: 'Open Sans', sans-serif;
+$headinng: 'Poppins', sans-serif;
+$grayishBlue: hsl(208, 11%, 55%);
+$veryDarkCyan: hsl(192, 100%, 9%);
+$veryPaleCyan: hsl(193, 100%, 96%);
+
+body {
+    font-family: $font;
+}
+
+.title {
+    font-weight: 600;
+    font-family: $headinng;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    line-height: 3rem;
+    color: $veryDarkCyan;
+    @include media-breakpoint-up(lg){
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    @include media-breakpoint-up(lg){
+        font-size: 1.1rem;
+    }
+}
+
+.tryBtn {
+    color: $veryDarkCyan;
+    font-family: $headinng;
+    font-weight: 600;
+    &:hover {
+     color: $veryDarkCyan;
+    font-family: $headinng;
+    font-weight: 600;
+    }
+}
+
+.getBtn {
+    font-family: $headinng;
+    font-weight: 600;
+}
+
+.card-title {
+    font-family: $headinng;
+    color: $veryDarkCyan;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 20%;
+    @include media-breakpoint-up(lg){
+        margin-left: 10%;
+    }
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    color: $grayishBlue;
+    @include media-breakpoint-up(lg){
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+
+.readyTitle {
+    color: $veryDarkCyan;
+    font-family: $headinng;
+    margin-top: 10%;
+    font-size: 1.3rem;
+}
+
+.footerText {
+    color: $veryPaleCyan;
+    font-size: 1.3rem;
+    @include media-breakpoint-up(lg){
+        font-size: 1rem;
+    }
+}
+
+.link {
+    list-style: none;
+    margin-top: 5%;
+    a {
+        text-decoration: none;
+        color: $veryPaleCyan;
+        font-size: 1.3rem;
+        @include media-breakpoint-up(lg){
+            font-size: 1rem;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.copyright {
+    //padding-bottom: 20%;
+    color: $veryPaleCyan;
+    @include media-breakpoint-up(lg){
+        margin-top: 40%;
+        font-size: 1rem;
+    }
+}
